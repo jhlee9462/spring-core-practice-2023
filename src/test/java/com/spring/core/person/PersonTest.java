@@ -10,9 +10,9 @@ class PersonTest {
     @Test
     void lombokTest() {
         Person p = new Person();
-        p.setAddress("seoul");
+        p.setAddress("서울");
         p.setAge(10);
-        p.setNickName("mike");
+        p.setNickName("마이키");
 
         System.out.println(p);
 
