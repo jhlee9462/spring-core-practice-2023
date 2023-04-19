@@ -11,16 +11,17 @@ public class EasternRestaurant implements Restaurant {
 
     private Course course;
 
-    @Autowired
     public EasternRestaurant(@Qualifier("kimuraChef") Chef chef, Course course) {
         this.chef = chef;
         this.course = course;
     }
 
-    public void setChef(Chef chef) {
+    @Autowired
+    public void setChef(@Qualifier("kimuraChef") Chef chef) {
         this.chef = chef;
     }
 
+    @Autowired
     public void setCourse(Course course) {
         this.course = course;
     }
